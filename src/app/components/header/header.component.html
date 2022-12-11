@@ -1,0 +1,8 @@
+<header style="z-index: 2">
+  <h1>{{ title }}</h1>
+  <app-button 
+    text="{{showAddTask ? 'Close' : 'Add'}}"
+    (btnClick)="toggleAddTask()"
+    [ngClass]="showAddTask ? 'Opened' : 'Closed'"  
+  ></app-button>
+</header>

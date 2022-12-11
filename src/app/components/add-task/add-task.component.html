@@ -1,0 +1,25 @@
+<form 
+        [ngClass]="showAddTask ? 'Opened' : 'Closed'"
+        class="add-form" (ngSubmit)="onSubmit()"
+>   
+    <div class="form-control">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" [(ngModel)]="title" placeholder="title">
+    </div>
+    <div class="form-control">
+        <label for="text">Info</label>
+        <input type="text" name="text" id="text" [(ngModel)]="text" placeholder="description">
+    </div>
+    <div class="form-control">
+        <label for="day">Date</label>
+        <input type="datetime-local" [(ngModel)]="day" name="day" id="day">
+    </div>
+    <div class="form-control form-control-check">
+        <label for="reminder">Reminder</label>
+        <label class="container">
+            <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <input type="submit" value="Save" class="">
+</form>
