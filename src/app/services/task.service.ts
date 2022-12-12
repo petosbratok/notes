@@ -14,7 +14,7 @@ const HttpOptions = {
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:6969/tasks/'
+  private apiUrl = 'http://192.168.0.8:6969/tasks/'
 
   constructor(private http:HttpClient) {}
 

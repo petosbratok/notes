@@ -1,3 +1,36 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .reminder{
-    border-left: 5px solid green;
+    color: rgb(0, 12, 100);
+    opacity: 1 !important;
+}
+.bell-icon{
+    margin-right: 10px;
+    opacity: 0;
+}
+
+.task-item{
+    background: #F5F5F5;
+    margin: 10px 15px;
+    padding: 12px 15px;
+    border-radius: 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.day{
+    color: grey;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.text{
+    font-weight: 300;
+    margin-top: 5px;
 }

@@ -1,16 +1,22 @@
 <div 
-    [ngClass]="{ reminder: task.reminder }" 
-    class="task"
+    class="task-item"
     (click)="onToggle(task)"
 >
-  <h3>
-    {{ task.title }}
-    <fa-icon 
-      (click)="onDelete(task)" 
-      [ngStyle]="{ color: 'red' }" 
-      [icon]="faTimes"
-    ></fa-icon>
-  </h3>
-  <p>{{ task.text }}</p>
-  <p>{{ task.day }}</p>
+  <div class="menu">
+    <h3 class="title">{{ task.title }}</h3>
+    <div>
+      <fa-icon 
+        [ngClass]="{ reminder: task.reminder }" 
+        [icon]="faBell"
+        class="bell-icon"
+      ></fa-icon>
+      <fa-icon 
+        (click)="onDelete(task)" 
+        [ngStyle]="{ color: 'red' }" 
+        [icon]="faTimes"
+      ></fa-icon>
+    </div>
+  </div>
+  <p class="day">Due at {{ task.day }}</p>
+  <p class="text">{{ task.text }}</p>
 </div>

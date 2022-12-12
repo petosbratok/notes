@@ -3,9 +3,12 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
+  height: 60px;
+  width: 100%;
 }
 
 h1{
+  position: fixed;
   letter-spacing: 1px;
   padding: 10px 20px;
 }
